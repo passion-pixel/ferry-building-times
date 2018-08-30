@@ -1,57 +1,92 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-
-import ferrySf from './ferrySf.jpg';
 import './App.css';
+
+import logo from './logo.svg';
+import ferrySf from './ferrySf.jpg';
+
+import 'materialize-css/dist/css/materialize.min.css';
+
 
 class App extends Component {
   render() {
     return (
+
+
       <div className="App">
+
         <header className="App-header">
-
-          <h2 className="App-title">
-            <i>Average wait time </i>
-                <p><h1> 20 minutes </h1></p>
-                <p> </p>
-          </h2>
-
-
-
+            <div class="row">
+              <br/><br/>
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h5 className="App-title">
+                    <i>Average wait time </i>
+                  </h5>
+                </div>
+              </div>
+            <div class="col s12 m6 l6">
+              <h2> 20 minutes </h2>
+            </div>
+            <div class="col s12 m6 l6">
+              <h2> 11:23</h2>
+            </div>
+            </div>
         </header>
-        <p className="App-intro">
 
-          <i> Average wait time
-          </i>
-            <p> 20 minutes </p>
+      <body className="App-body">
 
-        </p>
+              <div class="row">
+               <div class="col s12 m6 l6">
+                          <i> Next Ferries Available</i>
+                            <ol>
+                              <p> 1. Oakland </p>
+                              <p> 2 - Alameda </p>
+                              <p> 3 - Sausalito </p>
+                              <p> 1. Oakland </p>
+                              <p> 2 - Alameda </p>
+                              <p> 3 - Sausalito </p>
+                              <p> 1. Oakland </p>
+                              <p> 2 - Alameda </p>
+                              <p> 3 - Sausalito </p>
+                              <p> 1. Oakland </p>
+                              <p> 2 - Alameda </p>
+                              <p> 3 - Sausalito </p>
+                            </ol>
+                    </div>
+                        </div>
+      </body>
 
-        <p className="App-wait-time">
 
-          <i> Next Ferries Available</i>
-            <ol>
-              <p> 1. Oakland </p>
-              <p> 2 - Alameda </p>
-              <p> 3 - Sausalito </p>
-            </ol>
-        </p>
+      <footer className="App-footer">
+        <div class="row">
+            <div class="col s12 m4">
+                <img src={ferrySf} className="App-logo-static" style={styles.siteImage} alt="logo" />
+            </div>
+            <div class="col s12 m4">
+              <h6 className="Welcome-title"> Welcome to San Francisco</h6>
+              <h5 className="location"> Ferry Building </h5>
+            </div>
+            <div class="col s12 m4">
+              <img src={logo} className="App-logo-static" alt="logo" />
+            </div>
+          </div>
+      </footer>
 
-        <div className="App-footer">
-          <footer className="App-footer">
-
-          <img src={ferrySf} className="App-logo-static" alt="logo" />
-          <h2 className="Welcome-title"> Welcome to San Francisco</h2>
-          <h1 className="location"> Ferry Building </h1>
-          <img src={logo} className="App-logo-static" alt="logo" />
-          </footer>
-        </div>
+<br/>
 
       </div>
     );
   }
 }
 
-export default App;
+const styles = {
+  container: {
+    textAlign: 'center',
+  },
+  siteImage: {
+    borderRadius: 50,
+  }
+};
 
-//dfafd
+
+export default App;

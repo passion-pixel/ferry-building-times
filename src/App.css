@@ -1,8 +1,11 @@
 .App {
   text-align: center;
+  background-color: #323232;
+  color: #8e8e8e;
+
 }
 
-.App-logo {
+ .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
@@ -17,7 +20,26 @@
   border-radius: 50%;
 }
 
+.App-header {
+  text-align: left;
+  /* color: #eaeaea; */
+}
 
+.App-title {
+  color: #eaeaea;
+
+}
+
+.App-body {
+  color: #eaeaea;
+}
+
+.App-footer {
+  color: #eaeaea;
+  text-align: left
+}
+
+/*
 .App-header {
   background-color: #323232;
   height: 150px;
@@ -28,6 +50,7 @@
 .App-title {
   background-color: #323232;
   font-size: 1.5em;
+  text-align: left;
 }
 
 .App-intro {
@@ -38,6 +61,7 @@
 .App-wait-time {
   background-color: #323232;
   color: #ffffff;
+  text-align: center;
 }
 
 .App-footer {
@@ -49,4 +73,4 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */
